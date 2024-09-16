@@ -1,0 +1,41 @@
+
+/*    SIMPLE KEYWORDS
+color: red;
+margin: auto;
+      TEXT KEYWORDS
+text-align: center or right or left;
+font-size: 000px;
+font-weight: 1000;      WHAT IS THIS FOR?
+text-decoration-color: blue;
+
+*/
+body {
+    /* BACKGROUND KEYWORDS FOR IMAGES
+    background-image: url("images/image_example.jpg");
+    background-repeat: repeat-x;
+    background-size: 2.5%;
+    */
+}
+/*
+header {
+    font-size: 20px;
+    font-weight: 1000;
+    color: #ffff;
+
+    background-color: #ff0000;
+
+}
+h1 {
+    color: #0000ff;
+    font-weight: 2000;
+
+    background-color:#0000;
+
+}
+p {
+    font-size: 14;
+    color:#0000;
+
+    background-color: #ffff;
+}
+    */

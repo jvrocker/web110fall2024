@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+
+
+
     <head>
         <!-- this is a comment for jorge v-->
-         <title>INDEX</title>
+        <title>INDEX</title>
+        <style>
+            /* THIS IS AN INTERNAL STYLE */
+            h1 {
+                font-size: 50px;
+                color:blue;
+                text-decoration: underline;
+            }
+            p {
+                font-size: 25px;
+                color: purple;
+                font-weight: 200px;
+                background-color: black;
+            }
+            nav {
+                font-size: 30px;
+                color: red;
+                border: 2px solid red;
+
+            }
+            footer {
+                font-size:20px;
+                background-color:purple;
+
+            }
+        </style>
     </head>
     <body>
-        <h1>Jorge Vega</h1>
-        <p>
-            Let's start this again. My name is jorge vega, i am 
-            24 years old. Currently I'm majoring in
-            <a href="#">computer science</a>. While at the same time
-            working a full time + OT job. When it comes to hobbies
-            ther're all over the place so i can explain some of the 
-            by calling them...
-            
-        </p>
-        <ul> The relaxing hobbies
-            <li>Gaming</li>
-            <li>woodworking</li>
-            <li>gardening</li>
-            <li>Studying</li>
-            <li>stargazing</li>
-        </ul>
+
+        <header>
+            <h1>Jorge Vega</h1>
+
+            <p style="font-size: 20px; color:white; background-color: blue;" >
+                Let's start this again. My name is jorge vega, i am 
+                24 years old. Currently I'm majoring in
+                <a href="#">computer science</a>. While at the same time
+                working a full time + OT job. When it comes to hobbies
+                ther're all over the place so i can explain some of the 
+                by calling them...
+                
+            </p>
+        </header>
+
+        <nav>
+            <ul> 
+                <li style="color: red; " >Gaming</li>
+                <li style="color: blue;" >woodworking</li>
+                <li>gardening</li>
+                <li style="color: white; background-color: purple;">Studying</li>
+                <li>stargazing</li>
+            </ul>    
+        </nav>
 
         <p>For any astronomy news i tend to look in the
             <a href="https://www.nasa.gov/" target="_blank">Nasa</a>
@@ -33,18 +69,34 @@
         <p>Now for any hobbies that require physical fatigue, i 
             placed them in a ranking from highest to least favorite
         </p>
-        <ol> Physical hobbies
-            <li>working out</li>
+ 
+        <table style=" font-size: 15px; color:orange; background-color: green; " >
+            <thead>
+                <tr>
+                    <td>activities</td>
+                    <td>category</td>
+                </tr>
+            </thead>
+        </table>
+
+       <ol> Physical hobbies
+            
             <li>MMA</li>
             <li>sports (tennis, volleyball,pickleball,ect)</li>
             <li><a href="https://www.starvedrocklodge.com/starved-rock-state-park/" target="_blank">hikking</a> </li>
-            <!--- target="_self"  causes the link to be open in the same tab -->
-            <!--- target="_blank" sets target to blank tab-->
+            <!-- target="_self"  causes the link to be open in the same tab -->
+            <!-- target="_blank" sets target to blank tab -->
             <li>jogging</li>
-        </ol>
-        
+        </ol> 
+
         <h2>Hiking spots</h2>
         <p>Starved Rock state park</p>
         <img src="images/starved_rock_map.jpg" alt="map image" width=" 600px">
+        
+        <footer>
+            <h3>This is the bottom of the page</h3>
+        </footer>
     </body>
+    
+
 </html>

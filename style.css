@@ -8,14 +8,34 @@ font-size: 000px;
 font-weight: 1000;      WHAT IS THIS FOR?
 text-decoration-color: blue;
 
+border: (line width) 2px, (line type) solid, (color) red;
+
 */
+
 body {
-    /* BACKGROUND KEYWORDS FOR IMAGES
-    background-image: url("images/image_example.jpg");
-    background-repeat: repeat-x;
-    background-size: 2.5%;
-    */
+    border: 2px , solid, green;
 }
+
+.page_header {
+    font-size: 20px;
+    font-weight: 1000;
+    color: #ffff;
+
+    background-color: rgba(210,1,3, 1);
+
+}
+
+
+.page_footer {
+    font-size: 30px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffff;
+    margin:20px;
+    padding: 10px;
+}
+/*
+
 /*
 header {
     font-size: 20px;

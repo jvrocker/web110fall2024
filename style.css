@@ -17,7 +17,7 @@ body {
 }
 
 .page_header {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #ffff;
 
@@ -25,9 +25,22 @@ body {
     height: 400px;
     width: 100%;
     
-    /*display: flex;
-    direction: row;
-    */
+    display: flex;
+    /* justify-content:  */
+
+}
+.header_h1 {
+    width: 20%;
+    padding: 10px;
+    
+    flex:1;
+}
+.header_image {
+    width: 200px;
+    height:auto;
+    
+    flex:1;
+
 
 }
 #header_img {
@@ -35,18 +48,36 @@ body {
     width: 200px;
     box-shadow: -10px 30px 10px black;
     
-    float:right;
+    flex:1;
+
 
 }
 
 
 nav {
-    background-color: blue;
+    background-color: rgba(227,186,143,1);
     color: white;
     weight: 500;
     font-size: 25px;
 
 }
+.page_bar {
+    width:100%;
+    height:100%;
+
+    display:flex;
+}
+li {
+    text-align: center;
+    border: 5px solid black;
+    padding: 5px;
+    /*margin: 5px;*/
+
+
+    flex:1;
+
+}
+
 #Breakfast_menu {
     background-color: yellow;
     width: 300px;

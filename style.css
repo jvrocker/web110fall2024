@@ -21,7 +21,7 @@ body {
     font-weight: bold;
     color: #ffff;
 
-    background-color: rgba(210,1,3, 1);
+    background: linear-gradient(45deg,red,black);
     height: 400px;
     width: 100%;
     
@@ -36,22 +36,19 @@ body {
     flex:1;
 }
 .header_image {
-    width: 200px;
-    height:auto;
+    width: 100px;
+    height: 300px;
+    border-radius: 50%;
+
+    border: 5px solid black;
+
+    
     
     flex:1;
 
 
 }
-#header_img {
-    height: 200px;
-    width: 200px;
-    box-shadow: -10px 30px 10px black;
-    
-    flex:1;
 
-
-}
 
 
 nav {
@@ -63,7 +60,8 @@ nav {
 }
 .page_bar {
     width:100%;
-    height:100%;
+
+    height:10%;
 
     display:flex;
 }
@@ -77,6 +75,32 @@ li {
     flex:1;
 
 }
+
+
+
+.recipe_page {
+    background-image: url('images/leather_book.jpg');
+    background-repeat: no-repeat;
+    background-size: 170%;
+    width:100%;
+    height: auto;
+
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.recipe_instructions {
+    color: black;
+    width:60%;
+    height: auto;
+
+    flex:2;
+}
+.recipe_img {
+    width:500px;
+    flex: 1;
+}
+
 
 #Breakfast_menu {
     background-color: yellow;

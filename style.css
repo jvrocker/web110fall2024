@@ -75,7 +75,28 @@ li {
     flex:1;
 
 }
+/* 
+        hovering and changing things for links
+*/
+a {
+    color:orange;
+    text-decoration: none;
 
+}
+a:visited {
+    color:red;
+
+}
+a:hover {
+    color:black;
+    text-decoration: underline;
+}
+a:focus { /*selected and ABOUT to receive info,  */
+    color: green;
+}
+a:active {/* WHILE an action is being taken */
+    color:yellow;
+}
 
 
 .recipe_page {
@@ -141,6 +162,16 @@ td {
     border-collapse: collapse;
 }
 
+form {
+    background-color: red;
+    color: white;
+}
+input {
+    margin-top: 15px;
+    color: black;
+    border-color: blue;
+}
+
 .page_footer {
     font-size: 30px;
     text-align: center;
@@ -149,20 +180,3 @@ td {
     margin:20px;
     padding: 10px;
 }
-/*
-
-/*
-h1 {
-    color: #0000ff;
-    font-weight: 2000;
-
-    background-color:#0000;
-
-}
-p {
-    font-size: 14;
-    color:#0000;
-
-    background-color: #ffff;
-}
-    */

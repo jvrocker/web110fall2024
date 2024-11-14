@@ -1,0 +1,30 @@
+THIS DOCUMENT IS INTENDED TO GIVE THE UPDATES ON THE PAGE AND 
+WITH THE MAIN COMMENTS AS TO WHY THOSE CHANGES OR NEW
+CONTENT WAS MADE
+
+For starters the entire style.css file has been re-organized
+keeping specifict classes to its corresponding html page 
+. For each html page block, the structure will go as following
+the page visual location going from up to down. The
+top of the page will be constant for all pages.
+
+For the current assigments for week 11 the following were
+included into the code to page menu.html and its corresponding
+block in css:
+
+block section;
+------hovering and changing things for ALL links-----
+The effects of hover,visisted, active, and focus were added
+to all links in all pages
+
+block section;
+/*hover effects for menu.html divs*/
+the class hidden_menu has in effect {display: none;}
+when menu class is hovered the class hidden_menu displays
+again and the image changes size
+whithin the hidden_menu of lunch the links inside it have 
+the effects of all link hovering in the previous update
+
+block section;
+whithin fitlife.html the mockboard interface is located in the second 
+button which will play a sound when clicked

@@ -75,77 +75,8 @@ li {
     flex:1;
 
 }
-/* 
-        hovering and changing things for links
-*/
-a {
-    color:orange;
-    text-decoration: none;
 
-}
-a:visited {
-    color:red;
-
-}
-a:hover {
-    color:black;
-    text-decoration: underline;
-}
-a:focus { /*selected and ABOUT to receive info,  */
-    color: green;
-}
-a:active {/* WHILE an action is being taken */
-    color:yellow;
-}
-
-
-.recipe_page {
-    background-image: url('images/leather_book.jpg');
-    background-repeat: no-repeat;
-    background-size: 170%;
-    width:100%;
-    height: auto;
-
-    display:flex;
-    flex-wrap: wrap;
-
-}
-.recipe_instructions {
-    color: black;
-    width:60%;
-    height: auto;
-
-    flex:2;
-}
-.recipe_img {
-    width:500px;
-    flex: 1;
-}
-
-
-#Breakfast_menu {
-    background-color: yellow;
-    width: 300px;
-
-
-}
-#Lunch_menu {
-    background-color: green;
-    width: 300px;
-
-
-
-
-}
-#Dinner_menu {
-    background-color:#000000;
-    width: 300px;
-}
-#burger_image {
-    width: 300px;
-    height: 300px;
-}
-
+/* ------------ INDEX.HTML PAGE ---------------------*/
 table {
     border: 2px solid black;
     padding: 10px;
@@ -171,6 +102,111 @@ input {
     color: black;
     border-color: blue;
 }
+
+/* 
+------hovering and changing things for ALL links-----------
+*/
+a {
+    color:orange;
+    text-decoration: none;
+
+}
+a:visited {
+    color:red;
+
+}
+a:hover {
+    color:black;
+    text-decoration: underline;
+}
+a:focus { /*selected and ABOUT to receive info,  */
+    color: green;
+}
+a:active {/* WHILE an action is being taken */
+    color:yellow;
+}
+
+/*
+---------------menu.html page -------------------------
+*/
+.menu_image {
+    width: 300px;
+    height: 300px;
+}
+#Breakfast_menu {
+    background-color: yellow;
+    width: 300px;
+}
+#Lunch_menu {
+    background-color: green;
+    width: 300px;
+}
+#Dinner_menu {
+    background-color:#000000;
+    width: 300px;
+}
+
+/*hover effects for menu.html divs*/
+.hidden_menu {
+    display: none;
+    border: 3px solid black;
+}
+.menu:hover img  {
+    height:100px;
+    width: 100px;
+}
+.menu:hover .hidden_menu {
+    display: block;
+    
+}
+/*-----------FITLIFE.HTML PAGE  ---------------------*/
+
+.recipe_page {
+    background-image: url('images/leather_book.jpg');
+    background-repeat: no-repeat;
+    background-size: 170%;
+    width:100%;
+    height: auto;
+
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.recipe_instructions {
+    color: black;
+    width:60%;
+    height: auto;
+
+    flex:2;
+}
+.recipe_img {
+    width:500px;
+    flex: 1;
+}
+
+.soundboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.sound-button {
+    background-color: tan;
+    border: 2px solid black;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.sound-button:hover {
+    background-color: #4a90e2;
+}
+
+/*-----------------------------------------------*/
 
 .page_footer {
     font-size: 30px;

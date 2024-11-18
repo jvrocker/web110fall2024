@@ -146,7 +146,7 @@ a:active {/* WHILE an action is being taken */
     width: 300px;
 }
 
-/*hover effects for menu.html divs*/
+            /*hover effects for menu.html divs*/
 .hidden_menu {
     display: none;
     border: 3px solid black;
@@ -159,6 +159,94 @@ a:active {/* WHILE an action is being taken */
     display: block;
     
 }
+                /*LINK ANIMATIONS */
+.latino_animations {
+    color: green;
+
+}
+@keyframes green_white {
+    from {
+        color:green;
+    }
+    to {
+        color: white;
+    }
+}
+.latino_animations:hover {
+    animation: green_white 4s;
+}
+
+.mex_animation {
+    color: green;
+}
+@keyframes mex_flag {
+    0% {color: green;}
+    30% {color: white;}
+    60% {color: red;}
+}
+.mex_animation:hover {
+    animation: mex_flag 6s linear infinite;
+}
+.usa_animation {
+    color: blue;
+}
+@keyframes usa_flag {
+    0% {color:blue;}
+    33% {color:white;}
+    66% {color: red;}
+}
+.usa_animation:hover {
+    animation: usa_flag 9s ease-in infinite;
+}
+
+.persian_animation {
+    color: green;
+}
+@keyframes persian_flag {
+    0% {color: green;}
+    20% {color: white;}
+    40% {color: gold;}
+    60% {color: white;}
+    80% {color: red;}
+}
+.persian_animation:hover {
+    animation: persian_flag 10s ease-out infinite;
+}
+.greece_animation {
+    color: blue;
+    width: 400px;
+    height:200px;
+    border: 4px solid black;
+    border-radius: 30%;
+    background-color: white;
+
+    transition: color 3s ease-out;
+
+}
+@keyframes greece_flag {
+    0% {
+        color: blue;
+        background-color: white;
+    }
+    50% {
+        color:white;
+        background-color: blue;
+    }
+}
+.greece_animation:hover {
+    animation: greece_flag 4s ease-in-out infinite;
+
+}
+.transitions {
+    color: yellow;
+    background-color: black;
+    transition: color 4s;
+}
+.transitions:hover {
+    color: green;
+    background-color: white;
+}
+
 /*-----------FITLIFE.HTML PAGE  ---------------------*/
 
 .recipe_page {

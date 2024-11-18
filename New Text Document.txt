@@ -28,3 +28,19 @@ the effects of all link hovering in the previous update
 block section;
 whithin fitlife.html the mockboard interface is located in the second 
 button which will play a sound when clicked
+
+* next section would be the animation and transfer for the links 
+this changes will be located in the menu.html, the sections will be in
+the breakfast and dinner menu.
+
+block section;
+in the breakfast part in menu.html all the list items have been changed
+blank links the first 3 links in the menu have the class of 
+class="mex_animation" , followed by the usa_animation, then the persian_animation
+and lastly by the greece_animation . 
+block section;
+within css style sheet style.css, in the menu.html under the hover section then 
+following animations were added
+-the latino_animation with a keyframe function that will change the colors to the 
+mexican flag colors 
+with the same effect hapening with the other animations for the usa,persian,greece animations

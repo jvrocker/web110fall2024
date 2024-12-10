@@ -1,7 +1,19 @@
 body {
     border: 2px solid green;
-   
+    background-color: blue;
+    animation: body_animation 3s linear;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+@keyframes body_animation {
+    0% {color: rgb(12,119,207);}
+    30% {color: blue;}
+    60% {color: rgb(9,17,107);}
+}
+
 
 .page_header {
     font-size: 30px;
@@ -21,21 +33,39 @@ body {
     
 }
 nav {
-    background-color: rgb(9, 17, 107);
+    
     color: white;
     text-decoration: none;
-    weight: 500;
+    
     font-size: 25px;
-
+    width:80%;
+    height:60px;
 }
-.page_bar {
-    width:100%;
+.main_nav {
+    text-decoration: none;
+    color: white;
+    
+}
+.next_adventure {
+    text-decoration: none;
+    color: white;
+   
+}
+.past_adventure {
+    text-decoration: none;
+    color: white;
+    
+}
 
+.page_bar {
+    
+    background-color: rgb(9, 17, 107);
     height:50px;
 
     display:flex;
 }
 li {
+    
     text-align: center;
     border: 5px solid black;
     padding: 5px;
@@ -50,10 +80,14 @@ li {
     color: lightblue;
     background-image: url(incentive_img.jpg);
     font-size: 25px;
-    height:300px;
+    height:30%;
+    
 }
 .main_imgs {
-    width: 300px;
+
+    width: 80%;
+    height: 150px;
+
 }
 
 /*-------------------nav hover animations-------------*/
@@ -68,9 +102,10 @@ li {
 }
 
 @keyframes main_button {
-    0% {color: rgb(9,17,107);}
+    0% {color: rgb(12,119,207);}
     30% {color: blue;}
-    60% {color: rgb(12,119,207);}
+    60% {color: rgb(9,17,107);}
+    80% {color: blue;}
 }
 
 /*-----------previous_img.html web page-------------------*/
@@ -90,29 +125,16 @@ article {
 
 }
 /* Hide all images initially */
-#bright_angel{
-    display: none;
-    width: 400px;
-}
-#south_rim {
-    display: none;
-    width: 400px;
-}
-#rapids {
-    display: none;
-    width: 400px;
-}
-  
-/* Show the image corresponding to the hovered link */
-.bright_angel:hover #bright_angel {
-    display: block;
+
+.arizona_imgs {
+    display: none; /* hide all images */
+    width: 100%; 
+    max-width: 500px; 
+    margin-top: 20px;
   }
   
- .south_rim:hover #south_rim {
-    display: block;
-  }
-  
- .rapids:hover #rapids {
+/* Show the active image */
+.arizona_imgs.active {
     display: block;
   }
   

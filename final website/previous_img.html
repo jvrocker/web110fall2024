@@ -21,7 +21,7 @@
         </nav>
         <div class="Arizona" >
             <article>
-                <div>
+                <div class="article_past">
                     <h2>The Grand Canyon Expedition</h2>
                 <ul>
                     <li>
@@ -35,12 +35,37 @@
                 </div>
                 <div>
                     <img src="bright_angel.jpg" alt="3_sliding pictures" class="arizona_imgs" id="bright_angel">
-                    <img src="#" alt="3_sliding pictures" class="arizona_imgs" id="south_rim">
-                    <img src="#" alt="3_sliding pictures" class="arizona_imgs" id="rapids">
+                    <img src="south_rim.jpg" alt="3_sliding pictures" class="arizona_imgs" id="south_rim">
+                    <img src="rapids.jpg" alt="3_sliding pictures" class="arizona_imgs" id="rapids">
+                    <img src="night_sky.jpg" alt="Night sky in the dessert" class="arizona_imgs" id="night_sky">
                 </div>
             </article>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  const links = document.querySelectorAll(".article_past a"); // Select all links
+                  const images = document.querySelectorAll(".arizona_imgs"); // Select all images
+              
+                  links.forEach((link) => {
+                    link.addEventListener("click", (e) => {
+                      e.preventDefault(); // Prevent default navigation
+                      const targetId = link.className; // Get the class name (same as image id)
+              
+                      // Remove the active class from all images
+                      images.forEach((img) => img.classList.remove("active"));
+              
+                      // Add the active class to the corresponding image
+                      const targetImage = document.getElementById(targetId);
+                      if (targetImage) targetImage.classList.add("active");
+              
+                      // Redirect to the same page
+                      window.location.href = `#${targetId}`;
+                    });
+                  });
+                });
+              </script>
+            
             <article>
-                <div>
+                <div class="article_past">
                     <h2> Sedona Red Rock Escape</h2>
                     <ul>
                         <li><a href="#" class="sedona_terrain">Jeep tours through Sedona’s rugged red rock terrain.</a> </li>
@@ -50,13 +75,11 @@
 
                     </ul>
                 </div>
-                <div>
-                    <img src="#" alt="galerie of pictures">
-                </div>
+                
             </article>
             
             <article>
-                <div>
+                <div class="aticle_past">
                     <h2>Tucson Desert Discovery</h2>
                     <ul>
                         <li><a href="#" class="cacti_forest">Exploring Saguaro National Park and its iconic cacti forests.</a> </li>
@@ -65,9 +88,7 @@
                         <li><a href="#" class="night_saguaro">Night hikes to discover the unique desert wildlife</a> </li>
                     </ul>
                 </div>
-                <div>
-                    <img src="#" alt="on click picture and drop down on li">
-                </div>
+                
             </article>
         </div>
         
